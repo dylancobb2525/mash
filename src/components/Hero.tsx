@@ -9,7 +9,7 @@ export function Hero() {
       {/* Background Image with Blur */}
       <div className="absolute inset-0">
         <Image
-          src="/fat.jpg"
+          src="/masldnew.jpg"
           alt="Background"
           fill
           className="object-cover filter blur-sm scale-100"
@@ -89,10 +89,10 @@ export function Hero() {
             className="space-y-3"
           >
             <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
-              Obesity Learning Center
+              MASLD/MASH Learning Center
             </h1>
             <h2 className="text-2xl lg:text-3xl font-light text-cyan-300">
-              ADVANCING CARE IN OBESITY
+              Advancing Care in Metabolic-Associated Steatohepatitis
             </h2>
           </motion.div>
 

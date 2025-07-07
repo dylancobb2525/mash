@@ -53,19 +53,14 @@ export function Faculty() {
   const isInView = useInView(ref, { once: true })
 
   const facultyMembers = [
-    { name: "Michael Crotty, MB, BCh, BAO", image: "/mike.png" },
-    { name: "Sarah Le Brocq", image: "/sarah.png" },
-    { name: "Ana Maria Cebrián Cuenca, MD, PhD", image: "/ana.png" },
-    { name: "Barbara McGowan, PhD, MBBS", image: "/barb.png" },
-    { name: "Donna H. Ryan, MD", image: "/donna.jpeg" },
-    { name: "Nasreen Alfaris, MD, MPH", image: "/nas.png" },
-    { name: "Andreea Ciudin, MD, PhD" }, // No image available
-    { name: "Ricardo Cohen, MD, PhD", image: "/ric.png" },
-    { name: "Marta Comas Martinez", image: "/marta.png" },
-    { name: "Walmir Coutinho, MD", image: "/wal.png" },
-    { name: "Linong Ji, MD", image: "/lin.png" },
-    { name: "Rita Nawar, MD", image: "/rita.png" },
-    { name: "Charles P. Vega, MD", image: "/char.png" }
+    { name: "Naim Alkhouri, MD, FAASLD, DABOM", image: "/naim.jpg" },
+    { name: "Mazen Noureddin, MD, MHSc", image: "/mazen.jpg" },
+    { name: "Meena B. Bansal, MD, FAASLD", image: "/meena.jpg" },
+    { name: "Fernando Bril, MD", image: "/fern.jpg" },
+    { name: "Nicholas Pennings, DO, DABOM, MFOMA, FACOFP, FAAFP", image: "/nic.jpg" },
+    { name: "Jennifer R. Berg", image: "/jen.jpg" },
+    { name: "Mary E. Rinella, MD, FAASLD", image: "/mary.jpg" },
+    { name: "Naga Chalasani, MD, FAASLD", image: "/naga.jpg" }
   ]
 
   return (
@@ -82,23 +77,19 @@ export function Faculty() {
             Faculty
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Meet our distinguished team of experts dedicated to advancing obesity care and education worldwide.
+            Meet our distinguished team of experts dedicated to advancing MASLD/MASH care and education worldwide.
           </p>
         </motion.div>
 
         {/* Faculty Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {facultyMembers.map((faculty, index) => (
-            <div 
+            <FacultyCard 
               key={index}
-              className={index === 10 ? 'xl:col-start-2' : ''}
-            >
-              <FacultyCard 
-                name={faculty.name}
-                image={faculty.image}
-                index={index} 
-              />
-            </div>
+              name={faculty.name}
+              image={faculty.image}
+              index={index} 
+            />
           ))}
         </div>
       </div>

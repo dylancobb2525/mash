@@ -18,20 +18,10 @@ export function VideoIntroduction() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <div className="w-full h-[300px] lg:h-[350px] flex items-center justify-center" style={{ border: 'none', outline: 'none', boxShadow: 'none' }}>
-              <img
-                src="/obesity.png"
-                alt="Obesity Education"
-                className="max-w-full max-h-full object-contain"
-                style={{ 
-                  border: 'none', 
-                  outline: 'none', 
-                  boxShadow: 'none',
-                  margin: 0,
-                  padding: 0,
-                  display: 'block'
-                }}
-              />
+            <div className="w-full h-[300px] lg:h-[350px] flex items-center justify-center bg-gray-200 rounded-lg border-2 border-dashed border-gray-400">
+              <span className="text-2xl lg:text-3xl font-semibold text-gray-600">
+                Placeholder
+              </span>
             </div>
           </motion.div>
 
@@ -45,7 +35,7 @@ export function VideoIntroduction() {
             {/* Header - Aligned with top of video */}
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight text-center">
-                Your Comprehensive Hub for Excellence in Obesity Education
+                Your Comprehensive Hub for Excellence in Education on MASLD/MASH
               </h2>
             </div>
 
@@ -53,17 +43,17 @@ export function VideoIntroduction() {
             <div>
               <p className="text-base lg:text-lg text-gray-700 leading-relaxed">
                 Through expert interviews, case discussions, expert panels, and patient perspectives, leading
-                global experts deliver the latest evidence-based guidance and real-world experiences for
-                practicing clinicians. Join our growing community of endocrinologists, cardiologists,
-                nephrologists and primary care providers by engaging with the educational content in this
-                learning center and sharing it with your healthcare team.
+                global experts deliver the latest evidence-based guidance and real-world outcomes for
+                practicing clinicians. Join our growing community of endocrinology, metabolic care, primary
+                care and hepatology providers by engaging with the educational content in this learning
+                center and sharing it with your colleagues in your healthcare team.
               </p>
             </div>
 
             {/* Call to Action - Aligned with bottom of video */}
             <div className="text-center">
               <p className="text-lg lg:text-xl font-bold text-black leading-tight">
-                Together, we can advance the standard of obesity care worldwide!
+                Together, we can advance the standard of CKM care worldwide!
               </p>
             </div>
           </motion.div>
