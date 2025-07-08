@@ -9,7 +9,7 @@ interface StatCardProps {
   statValue: string
   animatedNumber: number
   suffix: string
-  description: string
+  description: React.ReactNode
   delay: number
 }
 
@@ -97,7 +97,12 @@ export function Statistics() {
       statValue: "101.2M",
       animatedNumber: 101.2,
       suffix: "",
-      description: "It is estimated that by 2030 and 2050, 101.2 million and 121.9 million adults in the US will have MASLD.1",
+      description: (
+        <span>
+          It is estimated that by 2030 and 2050, 101.2 million and 121.9 million adults in the US will have MASLD.
+          <sup className="text-xs font-normal ml-0.5">1</sup>
+        </span>
+      ),
       delay: 200
     },
     {
@@ -105,7 +110,12 @@ export function Statistics() {
       statValue: "23.2M",
       animatedNumber: 23.2,
       suffix: "",
-      description: "It is estimated that in 2020 14.9 million adults in the US had MASH which is expected to increased to 23.2 million by 2050.1",
+      description: (
+        <span>
+          It is estimated that in 2020, 14.9 million adults in the US had MASH, which is expected to increase to 23.2 million by 2050.
+          <sup className="text-xs font-normal ml-0.5">1</sup>
+        </span>
+      ),
       delay: 400
     },
     {
@@ -113,7 +123,12 @@ export function Statistics() {
       statValue: "Most common",
       animatedNumber: 0,
       suffix: "",
-      description: "MASLD is the most common cause of chronic liver disease and is projected to become the leading indication for liver transplant in the US",
+      description: (
+        <span>
+          MASLD is the most common cause of chronic liver disease and is projected to become the leading indication for liver transplant in the US.
+          <sup className="text-xs font-normal ml-0.5">1</sup>
+        </span>
+      ),
       delay: 600
     },
     {
@@ -121,19 +136,38 @@ export function Statistics() {
       statValue: "Leading cause",
       animatedNumber: 0,
       suffix: "",
-      description: "Cardiovascular disease is the leading cause of morbidity and mortality in patients with MASLD",
+      description: (
+        <span>
+          Cardiovascular disease is the leading cause of morbidity and mortality in patients with MASLD.
+          <sup className="text-xs font-normal ml-0.5">2</sup>
+        </span>
+      ),
       delay: 800
     }
   ]
 
   return (
-    <section ref={ref} className="py-8 lg:py-12 bg-gradient-to-b from-gray-50 to-white">
+    <section ref={ref} className="pt-8 lg:pt-12 pb-4 lg:pb-6 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
           {stats.map((stat, index) => (
             <StatCard key={index} {...stat} />
           ))}
         </div>
+        
+        {/* References Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          className="mt-4 pt-3 border-t border-gray-200"
+        >
+          <div className="text-xs text-gray-600">
+            <span className="font-semibold text-gray-700">References: </span>
+            <span>1. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11742522/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">PMC11742522</a>; </span>
+            <span>2. <a href="https://www.sciencedirect.com/science/article/pii/S2666602224000296?via%3Dihub" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">ScienceDirect Article</a></span>
+          </div>
+        </motion.div>
       </div>
     </section>
   )
