@@ -48,11 +48,7 @@ export function VideoIntroduction() {
             {/* Middle Content */}
             <div>
               <p className="text-base lg:text-lg text-gray-700 leading-relaxed">
-                Through expert interviews, case discussions, expert panels, and patient perspectives, leading
-                global experts deliver the latest evidence-based guidance and real-world outcomes for
-                practicing clinicians. Join our growing community of endocrinology, metabolic care, primary
-                care and hepatology providers by engaging with the educational content in this learning
-                center and sharing it with your colleagues in your healthcare team.
+                Through expert interviews, case discussions, expert panels, and patient perspectives, leading global experts deliver the latest evidence-based guidance and real-world outcomes for practicing clinicians. Join our growing community of endocrinology, obesity medicine, primary care, gastroenterology and hepatology providers by engaging with the educational content in this learning center and sharing it with your colleagues in your healthcare team.
               </p>
             </div>
 

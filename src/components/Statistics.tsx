@@ -71,7 +71,7 @@ function StatCard({ icon, statValue, animatedNumber, suffix, description, delay 
               ) : statValue.includes('Most common') ? (
                 <span className="text-lg sm:text-xl lg:text-2xl leading-tight">Most common</span>
               ) : statValue.includes('Leading') ? (
-                <span className="text-lg sm:text-xl lg:text-2xl leading-tight">Leading cause</span>
+                <span className="text-lg sm:text-xl lg:text-2xl leading-tight">Leading causes</span>
               ) : (
                 <>{count}{suffix}</>
               )}
@@ -133,7 +133,7 @@ export function Statistics() {
     },
     {
       icon: <Heart className="w-8 h-8 text-red-500" />,
-      statValue: "Leading cause",
+      statValue: "Leading causes",
       animatedNumber: 0,
       suffix: "",
       description: (
