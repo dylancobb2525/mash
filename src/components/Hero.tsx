@@ -79,8 +79,8 @@ export function Hero() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-full px-6 lg:px-12">
-        <div className="text-center space-y-6 max-w-5xl">
+      <div className="relative z-10 flex items-center justify-start min-h-full px-6 lg:px-12">
+        <div className="text-left space-y-6 max-w-5xl">
           {/* Main Title */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -101,7 +101,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex justify-center pt-4"
+            className="flex justify-start pt-4"
           >
             <button 
               onClick={() => document.getElementById('educational-activities')?.scrollIntoView({ behavior: 'smooth' })}

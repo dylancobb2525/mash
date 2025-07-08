@@ -40,7 +40,7 @@ export function VideoIntroduction() {
           >
             {/* Header - Aligned with top of video */}
             <div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight text-center">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight text-left">
                 Your Comprehensive Hub for Excellence in Education on MASLD/MASH
               </h2>
             </div>
@@ -57,7 +57,7 @@ export function VideoIntroduction() {
             </div>
 
             {/* Call to Action - Aligned with bottom of video */}
-            <div className="text-center">
+            <div className="text-left">
               <p className="text-lg lg:text-xl font-bold text-black leading-tight">
                 Together, we can advance the standard of MASLD/MASH care worldwide!
               </p>
