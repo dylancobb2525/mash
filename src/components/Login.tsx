@@ -82,7 +82,7 @@ export function Login({ onLogin }: LoginProps) {
               </div>
             </div>
             <h1 className="text-2xl font-bold text-gray-900 mb-2">
-              Obesity Learning Center
+              MASLD/MASH Learning Center
             </h1>
             <p className="text-gray-600">
               Please enter the access password to continue
