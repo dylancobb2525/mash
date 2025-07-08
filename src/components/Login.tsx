@@ -68,18 +68,13 @@ export function Login({ onLogin }: LoginProps) {
             className="text-center mb-8"
           >
             <div className="flex justify-center mb-6">
-              <div className="relative h-20 w-48">
-                <Image
-                  src="/reach.png"
-                  alt="ReachMD"
-                  fill
-                  className="object-contain"
-                  style={{
-                    clipPath: 'inset(30% 0 30% 0)',
-                    transform: 'scale(1.8)',
-                  }}
-                />
-              </div>
+              <Image
+                src="/newlogo.svg"
+                alt="ReachMD"
+                width={160}
+                height={60}
+                className="h-16 w-auto object-contain"
+              />
             </div>
             <h1 className="text-2xl font-bold text-gray-900 mb-2">
               MASLD/MASH Learning Center

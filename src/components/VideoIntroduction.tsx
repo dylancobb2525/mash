@@ -59,7 +59,7 @@ export function VideoIntroduction() {
             {/* Call to Action - Aligned with bottom of video */}
             <div className="text-center">
               <p className="text-lg lg:text-xl font-bold text-black leading-tight">
-                Together, we can advance the standard of CKM care worldwide!
+                Together, we can advance the standard of MASLD/MASH care worldwide!
               </p>
             </div>
           </motion.div>
