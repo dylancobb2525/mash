@@ -1,6 +1,6 @@
-# Obesity Learning Center
+# MASLD/MASH Learning Center
 
-A modern, password-protected educational website showcasing obesity research, statistics, and educational activities. Built with Next.js and designed with a sleek, professional interface.
+A modern, password-protected educational website showcasing MASLD/MASH research, statistics, and educational activities. Built with Next.js and designed with a sleek, professional interface.
 
 ## Features
 
@@ -8,17 +8,17 @@ A modern, password-protected educational website showcasing obesity research, st
 - **Modern Design**: Glassmorphism effects, animated gradients, and smooth transitions
 - **Responsive Layout**: Optimized for all device sizes
 - **Educational Content**: 
-  - Global obesity statistics with animated counters
-  - Educational activities with external links
+  - MASLD/MASH statistics with animated counters and references
+  - Educational activities with external links to ReachMD content
   - Curated research resources from PubMed
   - Video introduction section
-- **Professional Branding**: ReachMD logo integration and consistent theming
+- **Professional Branding**: Updated ReachMD logo integration with GLC branding and consistent theming
 
 ## Getting Started
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Create a `.env.local` file with: `SITE_PASSWORD=obesity123`
+3. Create a `.env.local` file with: `SITE_PASSWORD=mash123`
 4. Run the development server: `npm run dev`
 5. Visit `http://localhost:3000` and enter the password to access the site
 
