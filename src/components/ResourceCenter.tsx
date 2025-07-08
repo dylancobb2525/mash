@@ -260,7 +260,7 @@ export function ResourceCenter() {
             Resource Center
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
-            Discover a curated collection of foundational, practical, cutting-edge and real-world educational resources at your fingertips. Click on a link to get started.
+            Discover a curated collection of foundational, practical, cutting-edge and real-world educational resources at your fingertips.
           </p>
 
           {/* Toggle Button */}
@@ -268,7 +268,7 @@ export function ResourceCenter() {
             onClick={() => setIsExpanded(!isExpanded)}
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-all flex items-center gap-2 mx-auto"
           >
-            {isExpanded ? 'Hide Resources' : 'Click to View Resources'}
+            {isExpanded ? 'Hide Resources' : 'View Resources'}
             {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
           </motion.button>
         </motion.div>

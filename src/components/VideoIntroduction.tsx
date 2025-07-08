@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
+import Image from 'next/image'
 
 export function VideoIntroduction() {
   const ref = useRef(null)
@@ -18,10 +19,15 @@ export function VideoIntroduction() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
           >
-            <div className="w-full h-[300px] lg:h-[350px] flex items-center justify-center bg-gray-200 rounded-lg border-2 border-dashed border-gray-400">
-              <span className="text-2xl lg:text-3xl font-semibold text-gray-600">
-                Placeholder
-              </span>
+            <div className="w-full h-[300px] lg:h-[350px] rounded-lg overflow-hidden">
+              <Image
+                src="/placeholder.png"
+                alt="MASLD/MASH Educational Content"
+                width={800}
+                height={350}
+                className="w-full h-full object-cover"
+                priority
+              />
             </div>
           </motion.div>
 
