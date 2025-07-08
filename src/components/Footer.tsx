@@ -74,7 +74,7 @@ export function Footer() {
               transition={{ duration: 0.6, delay: 0.3 }}
             >
               <a 
-                href="mailto:info@reachmd.com"
+                href="mailto:info@glc.healthcare"
                 className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-lg inline-block"
               >
                 Contact Us
