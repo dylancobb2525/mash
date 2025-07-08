@@ -64,14 +64,14 @@ function StatCard({ icon, statValue, animatedNumber, suffix, description, delay 
           
           <div className="space-y-3 flex-1 flex flex-col justify-center">
             <motion.div
-              className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent h-[3rem] flex items-center justify-center"
+              className="text-xl sm:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent min-h-[3rem] flex items-center justify-center text-center px-2"
             >
               {statValue.includes('M') && animatedNumber > 0 ? (
                 <>{count.toFixed(1)}M</>
               ) : statValue.includes('Most common') ? (
-                <>Most common</>
+                <span className="text-lg sm:text-xl lg:text-2xl leading-tight">Most common</span>
               ) : statValue.includes('Leading') ? (
-                <>Leading cause</>
+                <span className="text-lg sm:text-xl lg:text-2xl leading-tight">Leading cause</span>
               ) : (
                 <>{count}{suffix}</>
               )}
