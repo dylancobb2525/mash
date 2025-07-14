@@ -7,7 +7,7 @@ import Image from 'next/image'
 export function VideoIntroduction() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
-
+  const assetPrefix =  process.env.ASSET_PREFIX || '';
   return (
     <section ref={ref} id="video-introduction" className="py-8 lg:py-12 bg-white">
       <div className="max-w-full mx-auto px-4 lg:px-8">
@@ -21,7 +21,7 @@ export function VideoIntroduction() {
           >
             <div className="w-full h-[300px] lg:h-[350px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.png"
+                src={`${assetPrefix}placeholder.png`}
                 alt="MASLD/MASH Educational Content"
                 width={800}
                 height={350}

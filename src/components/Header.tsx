@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 export function Header() {
+  const assetPrefix =  process.env.ASSET_PREFIX || '';
   return (
     <motion.header
       initial={{ y: -100, opacity: 0 }}
@@ -21,7 +22,7 @@ export function Header() {
             className="flex items-center"
           >
             <Image
-              src="/newlogo.svg"
+              src={`${assetPrefix}newlogo.svg`}
               alt="ReachMD Logo"
               width={80}
               height={25}
@@ -38,7 +39,7 @@ export function Header() {
             className="flex items-center"
           >
             <Image
-              src="/glc.png"
+              src={`${assetPrefix}glc.png`}
               alt="GLC Logo"
               width={120}
               height={40}

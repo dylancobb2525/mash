@@ -13,7 +13,7 @@ export function Footer() {
   const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false)
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false)
-
+  const assetPrefix =  process.env.ASSET_PREFIX || '';
   return (
     <>
       <footer ref={ref} className="bg-gray-200 text-gray-900 py-12">
@@ -32,7 +32,7 @@ export function Footer() {
               className="flex items-center"
             >
               <Image
-                src="/glc.png"
+                src={`${assetPrefix}glc.png`}
                 alt="GLC Logo"
                 width={120}
                 height={40}
