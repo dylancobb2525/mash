@@ -51,16 +51,16 @@ function FacultyCard({ name, image, index }: FacultyCardProps) {
 export function Faculty() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
-
+  const assetPrefix =  process.env.ASSET_PREFIX || '';
   const facultyMembers = [
-    { name: "Naim Alkhouri, MD, FAASLD, DABOM", image: "/naim.jpg" },
-    { name: "Mazen Noureddin, MD, MHSc", image: "/mazen.jpg" },
-    { name: "Meena B. Bansal, MD, FAASLD", image: "/meena.jpg" },
-    { name: "Fernando Bril, MD", image: "/fern.jpg" },
-    { name: "Nicholas Pennings, DO, DABOM, MFOMA, FACOFP, FAAFP", image: "/nic.jpg" },
-    { name: "Jennifer R. Berg", image: "/jen.jpg" },
-    { name: "Mary E. Rinella, MD, FAASLD", image: "/mary.jpg" },
-    { name: "Naga Chalasani, MD, FAASLD", image: "/naga.jpg" }
+    { name: "Naim Alkhouri, MD, FAASLD, DABOM", image: `${assetPrefix}naim.jpg` },
+    { name: "Mazen Noureddin, MD, MHSc", image: `${assetPrefix}mazen.jpg` },
+    { name: "Meena B. Bansal, MD, FAASLD", image: `${assetPrefix}meena.jpg` },
+    { name: "Fernando Bril, MD", image: `${assetPrefix}fern.jpg` },
+    { name: "Nicholas Pennings, DO, DABOM, MFOMA, FACOFP, FAAFP", image: `${assetPrefix}nic.jpg` },
+    { name: "Jennifer R. Berg", image: `${assetPrefix}jen.jpg` },
+    { name: "Mary E. Rinella, MD, FAASLD", image: `${assetPrefix}mary.jpg` },
+    { name: "Naga Chalasani, MD, FAASLD", image: `${assetPrefix}naga.jpg` }
   ]
 
   return (
