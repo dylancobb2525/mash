@@ -79,6 +79,13 @@ export function EducationalPrograms() {
 
   const activities = [
     {
+      title: "Treating MASH With Compensated Cirrhosis: A Serious Unmet Need",
+      category: "CME/CE",
+      credits: "0.25",
+      image: "/newact.png",
+      link: "https://reachmd.com/programs/cme/treating-mash-with-compensated-cirrhosis-a-serious-unmet-need/37646/"
+    },
+    {
       title: "The Changing Paradigm of Treating MASLD/MASH: At the Crossroads of Hepato-Cardiometabolic Care – Chair's Perspective",
       category: "CME/CE",
       credits: "0.25",
@@ -130,19 +137,12 @@ export function EducationalPrograms() {
           </h2>
         </motion.div>
 
-        {/* Activities Grid - 2x2 layout */}
+        {/* Activities Grid - 2x3 layout */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {activities.slice(0, 4).map((activity, index) => (
+          <div className="grid md:grid-cols-2 gap-8">
+            {activities.map((activity, index) => (
               <ActivityCard key={index} {...activity} index={index} />
             ))}
-          </div>
-          
-          {/* Centered 5th activity */}
-          <div className="flex justify-center">
-            <div className="w-full md:w-1/2">
-              <ActivityCard {...activities[4]} index={4} />
-            </div>
           </div>
         </div>
       </div>
