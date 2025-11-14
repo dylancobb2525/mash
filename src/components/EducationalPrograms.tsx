@@ -76,7 +76,7 @@ function ActivityCard({ title, category, credits, image, link, index }: Activity
 export function EducationalPrograms() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
-
+  const assetPrefix =  process.env.ASSET_PREFIX || '';
   const activities = [
     {
       title: "Treating MASH With Compensated Cirrhosis: A Serious Unmet Need",
@@ -89,35 +89,35 @@ export function EducationalPrograms() {
       title: "The Changing Paradigm of Treating MASLD/MASH: At the Crossroads of Hepato-Cardiometabolic Care – Chair's Perspective",
       category: "CME/CE",
       credits: "0.25",
-      image: "/act1.png",
+      image: `${assetPrefix}act1.png`,
       link: "https://reachmd.com/programs/cme/the-changing-paradigm-of-treating-masldmash-at-the-crossroads-of-hepato-cardiometabolic-care-chairs-perspective/26372/"
     },
     {
       title: "Stemming the Tide on MASLD/MASH: It Starts on the Frontlines in Endocrinology and Primary Care Clinics",
       category: "CME/CE",
       credits: "1.00",
-      image: "/act2.png",
+      image: `${assetPrefix}act2.png`,
       link: "https://reachmd.com/live-events/stemming-the-tide-on-masldmash-it-starts-on-the-frontlines-in-endocrinology-and-primary-care-clinics/35723/"
     },
     {
       title: "Chairperson's Perspective: Treating At-Risk MASH: What Are You Waiting For?",
       category: "CME/CE",
       credits: "0.25",
-      image: "/act3.png",
+      image: `${assetPrefix}act3.png`,
       link: "https://reachmd.com/programs/cme/chairpersons-perspective-treating-at-risk-mash-what-are-you-waiting-for/28862/"
     },
     {
       title: "Advances in the Treatment and Management of MASH: More Options, More Decisions",
       category: "CME/CE",
       credits: "1.50",
-      image: "/act4.png",
+      image: `${assetPrefix}act4.png`,
       link: "https://reachmd.com/live-events/advances-in-the-treatment-and-management-of-mash-more-options-more-decisions/26621/"
     },
     {
       title: "Advances in MASLD/MASH: Treating the Liver, the Disease, and the Patient – Chair's Perspective",
       category: "CME/CE",
       credits: "0.25",
-      image: "/act5.png",
+      image: `${assetPrefix}act5.png`,
       link: "https://reachmd.com/programs/cme/advances-in-masldmash-treating-the-liver-the-disease-and-the-patient-chairs-perspective/24278/"
     }
   ]
